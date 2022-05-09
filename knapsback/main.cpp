@@ -8,17 +8,20 @@
 using namespace std;
 
 
-
 int main()
 {
-    string buf;
 
     cout << "Knapsack problem!" << endl;
 
-    //ofstream fout;
-   // fout.open("ks_19_0");
 
-    ifstream file("data/ks_100_0");
-    getline(file, buf);
-    cout << buf << endl;
+    string buff; // буфер промежуточного хранения считываемого из файла текста
+        ifstream fin("/Users/nikpav/Desktop/c++/Yandex/Yandex/fki/fki/fki 2kurs/knapsback/knapsback/ks_19_0"); // открыли файл для чтения
+     
+        fin >> buff; // считали первое слово из файла
+        cout << buff << endl; // напечатали это слово
+     
+
+
+
+    return 0;
 }
